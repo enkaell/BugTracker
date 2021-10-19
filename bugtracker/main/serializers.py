@@ -2,6 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import *
 
+
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
@@ -12,6 +13,7 @@ class AllTasksSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tasks
         fields = '__all__'
+
 
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
