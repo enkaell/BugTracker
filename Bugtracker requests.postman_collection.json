@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "8bcc68d0-3c69-42de-b71b-c9430ea613bf",
+		"name": "Bugtracker requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/4/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token b9306b7c311761ed3c35f04b4134b54341b9a725",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token b9306b7c311761ed3c35f04b4134b54341b9a725",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tittle",
+							"value": "task",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "bug",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "йцвйцв",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "To do",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "bad",
+							"type": "text"
+						},
+						{
+							"key": "executor",
+							"value": "ыы212s",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "vlad234",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "vlad2",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "Разработчик",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/manage/?username=vlad2&password=vladosss&role=sss",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token b9306b7c311761ed3c35f04b4134b54341b9a725",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "qw",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "vlad2",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "Менеджер",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/manage/?username=vlad2&password=vladosss&role=sss",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"manage",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "vlad2"
+						},
+						{
+							"key": "password",
+							"value": "vladosss"
+						},
+						{
+							"key": "role",
+							"value": "sss"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
